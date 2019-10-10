@@ -1,6 +1,6 @@
 %% Node selection
 % Written by Shunxin Guo
-% 2018-11-29
+% 2019-10-10
 %% Inputs:
 % acc: the nodes selected and the probability of nodes
 % input_data: training data without labels
