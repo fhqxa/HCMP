@@ -1,4 +1,4 @@
- %% Top-K classification with tree hierarchy in Madantory Leaf Node Prediction.
+%% Top-k classification with tree hierarchy in Madantory Leaf Node Prediction.
 %% Train a multi-class logistic regression classifier for each node,K nodes were selected and classified by classifier.
 %% Usage: change the input dataSat on the top,
 %%        and you can change the proportion of data for training and testing at parameter 'numFolds'.
@@ -19,4 +19,4 @@ tic
 numFolds = 10;
 k = 2; % Number of paths 1 <= k <= min(Number of batches).
 [accuracyMean,accuracyStd,F_LCAMean,FHMean,TIEMean,PredLabel,RealLabel] = Kflod_TopKClassifier( dataTest.data_array,numFolds,dataTest.tree,k);
-t=toc;
+t = toc;
