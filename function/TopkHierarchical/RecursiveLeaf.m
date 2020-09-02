@@ -1,6 +1,7 @@
+
 %% Node selection
 % Written by Shunxin Guo
-% 2019-10-10
+% 2019-11-29
 %% Inputs:
 % acc: the nodes selected and the probability of nodes
 % input_data: training data without labels
@@ -28,7 +29,7 @@ currentNodeAcc = acc(1,2);
                mid_pro = n_d_v(1,1);
                currentNode = model{currentParentNode}.Label(currentNodeID);
                acc(1,:) = [currentNode,mid_pro];
-               select(1,:) = [currentNode,mid_pro,currentNodeAcc * acc(1,2)];
+               select(1,:) = [currentNode,mid_pro,currentNodeAcc^2 * acc(1,2)];
            end
         else
             select = [currentNode,currentNodeAcc,currentNodeAcc;currentNode,currentNodeAcc,currentNodeAcc];
