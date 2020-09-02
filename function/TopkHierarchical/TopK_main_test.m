@@ -17,6 +17,6 @@ ds = 1;
    
 tic
 numFolds = 10;
-k = 2; % Number of paths
+k = 2; % Number of paths 1 <= k <= min(Number of batches).
 [accuracyMean,accuracyStd,F_LCAMean,FHMean,TIEMean,PredLabel,RealLabel] = Kflod_TopKClassifier( dataTest.data_array,numFolds,dataTest.tree,k);
 t=toc;
